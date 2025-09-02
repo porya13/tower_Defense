@@ -46090,6 +46090,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02dad9061a446564dbf134bb4db97127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioMixer: {fileID: 0}
+  mixerMultiplier: 25
+  sfxSlider: {fileID: 0}
+  sfxParamter: 
+  sfxSliderText: {fileID: 0}
+  bgmSlider: {fileID: 0}
+  bgmParamter: 
+  bgmSliderText: {fileID: 0}
   keyboardSenseSlider: {fileID: 283220220}
   keyboardSensText: {fileID: 698730995}
   keyboardSenseParametr: keyboardSens
@@ -69784,6 +69792,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 208290806}
   - {fileID: 176346582}
+  onHoverSfx: {fileID: 0}
+  onClickSfx: {fileID: 0}
 --- !u!114 &1151052070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87303,23 +87313,33 @@ MonoBehaviour:
   levelWaves:
   - nextGrid: {fileID: 0}
     newPortals: []
-    basicEnemy: 0
+    basicEnemy: 5
     fastEnemy: 2
+    heavyEnemy: 3
+    flyingEnemy: 2
   - nextGrid: {fileID: 0}
     newPortals: []
     basicEnemy: 0
     fastEnemy: 4
+    heavyEnemy: 0
+    flyingEnemy: 0
   - nextGrid: {fileID: 1278275493}
     newPortals:
     - {fileID: 2118959112}
     basicEnemy: 0
     fastEnemy: 6
+    heavyEnemy: 0
+    flyingEnemy: 0
   waveIndex: 0
   yOffset: 5
   tileDelay: 0.1
   basicEnemy: {fileID: 3382086203631219662, guid: ab8ad4c6387882e448b1ef4a7fba51e4,
     type: 3}
   fastEnemy: {fileID: 8796434388098386084, guid: 4314b52b2f9dc114a88a77a6c9c67b1c,
+    type: 3}
+  heavyEnemyPrefab: {fileID: 1578749525645598100, guid: c54047056a04c4e4e8d8967893c2fe66,
+    type: 3}
+  flyingEnemyPrefab: {fileID: 3677966823586474816, guid: 8be3a31074ae74242ae70843bbb74938,
     type: 3}
   gameBegun: 0
 --- !u!4 &1438963826
