@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public enum EnemyType { Basic, Fast, None}
+public enum EnemyType { Basic, Fast,Heavy,Flying, None }
 
 public class Enemy : MonoBehaviour , IDamagable
 {
