@@ -2,7 +2,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public enum EnemyType { Basic, Fast, None}
+public enum EnemyType
+{
+    Basic = 0,
+    Fast = 1,
+    Heavy = 2,
+    // Reserved values to preserve existing prefab serialization indices
+    Reserved3 = 3,
+    Reserved4 = 4,
+    Flying = 5,
+    None = 6
+}
 
 public class Enemy : MonoBehaviour , IDamagable
 {
