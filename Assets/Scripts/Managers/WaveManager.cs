@@ -9,6 +9,8 @@ public class WaveDetails
     public EnemyPortal[] newPortals;
     public int basicEnemy;
     public int fastEnemy;
+    public int heavyEnemy;
+    public int flyingEnemy;
 }
 
 public class WaveManager : MonoBehaviour
@@ -31,6 +33,8 @@ public class WaveManager : MonoBehaviour
     [Header("Enemy Prefabs")]
     [SerializeField] private GameObject basicEnemy;
     [SerializeField] private GameObject fastEnemy;
+    [SerializeField] private GameObject heavyEnemyPrefab;
+    [SerializeField] private GameObject flyingEnemyPrefab;
 
     private List<EnemyPortal> enemyPortals;
     private bool waveTimerEnabled;
@@ -241,6 +245,18 @@ public class WaveManager : MonoBehaviour
         for (int i = 0; i < levelWaves[waveIndex].fastEnemy; i++)
         {
             newEnemyList.Add(fastEnemy);
+        }
+
+        for (int i = 0; i < levelWaves[waveIndex].heavyEnemy; i++)
+        {
+            if (heavyEnemyPrefab != null)
+                newEnemyList.Add(heavyEnemyPrefab);
+        }
+
+        for (int i = 0; i < levelWaves[waveIndex].flyingEnemy; i++)
+        {
+            if (flyingEnemyPrefab != null)
+                newEnemyList.Add(flyingEnemyPrefab);
         }
 
         return newEnemyList;
