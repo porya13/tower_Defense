@@ -46033,16 +46033,24 @@ MonoBehaviour:
     newPortals: []
     basicEnemy: 0
     fastEnemy: 2
+    heavyEnemy: 0
+    flyingEnemy: 0
   - nextGrid: {fileID: 0}
     newPortals: []
     basicEnemy: 0
     fastEnemy: 4
+    heavyEnemy: 0
+    flyingEnemy: 0
   waveIndex: 0
   yOffset: 5
   tileDelay: 0.1
   basicEnemy: {fileID: 3382086203631219662, guid: ab8ad4c6387882e448b1ef4a7fba51e4,
     type: 3}
   fastEnemy: {fileID: 8796434388098386084, guid: 4314b52b2f9dc114a88a77a6c9c67b1c,
+    type: 3}
+  heavyEnemy: {fileID: 1578749525645598100, guid: 8a6a8a8a8a6a8a8a8a6a8a8a8a6a8a8a,
+    type: 3}
+  flyingEnemy: {fileID: 3677966823586474816, guid: 9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b,
     type: 3}
   gameBegun: 0
 --- !u!4 &1438963826
